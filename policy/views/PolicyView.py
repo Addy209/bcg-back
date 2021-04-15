@@ -9,7 +9,7 @@ from django.shortcuts import get_list_or_404,get_object_or_404
 from django.utils.decorators import method_decorator
 from rest_framework.pagination import PageNumberPagination
 
-class GetPolicyView(APIView): 
+class PolicyView(APIView): 
         def get(self, request, pk):
             try:
                 policy_tbl_object=get_object_or_404(Policy_tbl,pk=pk)
